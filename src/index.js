@@ -2,7 +2,7 @@ import express from 'express';
 import importMocks from './importMocks';
 import applyMiddleware from './applyMiddleware';
 
-function MockingBird({ mocksDirectory, whitelist, serverPort = 9090 }) {
+function MockingBirds({ mocksDirectory, whitelist, serverPort = 9090 }) {
   const app = express();
 
   applyMiddleware(app, whitelist);
@@ -14,4 +14,4 @@ function MockingBird({ mocksDirectory, whitelist, serverPort = 9090 }) {
   return app;
 }
 
-export default MockingBird;
+export default MockingBirds;

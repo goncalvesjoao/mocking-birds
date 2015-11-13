@@ -18,7 +18,7 @@ var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function MockingBird(_ref) {
+function MockingBirds(_ref) {
   var mocksDirectory = _ref.mocksDirectory;
   var whitelist = _ref.whitelist;
   var _ref$serverPort = _ref.serverPort;
@@ -35,4 +35,4 @@ function MockingBird(_ref) {
   return app;
 }
 
-exports.default = MockingBird;
+exports.default = MockingBirds;

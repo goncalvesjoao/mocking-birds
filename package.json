@@ -1,10 +1,10 @@
 {
   "name": "mocking-birds",
-  "version": "1.0.0",
-  "description": "expressjs server that gathers all the lcfe mock servers",
+  "version": "1.0.1",
+  "description": "expressjs server that gathers several mocking servers",
   "main": "dist/index.js",
   "bin": {
-    "mocking-bird": "bin/mocking-bird.js"
+    "mocking-bird": "bin/mocking-birds.js"
   },
   "scripts": {
     "build": "npm run clean && npm run lint && ./node_modules/.bin/babel --presets es2015 -d ./dist/ ./src/",

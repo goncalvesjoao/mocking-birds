@@ -2,10 +2,10 @@
 'use strict';
 
 var commander = require('commander');
-var MockingBird = require('../dist').default;
+var MockingBirds = require('../dist').default;
 
 function run(mocksDirectory, options) {
-  MockingBird({
+  MockingBirds({
     mocksDirectory,
     serverPort: options.port,
     whitelist: (options.whiteList || '').split(','),
