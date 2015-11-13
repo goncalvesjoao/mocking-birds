@@ -1,5 +1,5 @@
 {
-  "name": "lcfe-mocking-bird",
+  "name": "mocking-birds",
   "version": "1.0.0",
   "description": "expressjs server that gathers all the lcfe mock servers",
   "main": "dist/index.js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/croudcare/lcfe-mocking-bird.git"
+    "url": "git+https://github.com/goncalvesjoao/mocking-birds.git"
   },
   "author": "croudcare",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/croudcare/lcfe-mocking-bird/issues"
+    "url": "https://github.com/goncalvesjoao/mocking-birds/issues"
   },
-  "homepage": "https://github.com/croudcare/lcfe-mocking-bird#readme",
+  "homepage": "https://github.com/goncalvesjoao/mocking-birds#readme",
   "dependencies": {
     "body-parser": "^1.14.1",
     "commander": "^2.9.0",
