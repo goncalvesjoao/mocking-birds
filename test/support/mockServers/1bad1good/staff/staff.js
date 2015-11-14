@@ -1,5 +1,3 @@
-var _ = require('lodash');
-
 function Staff(app) {
 
   var members = [

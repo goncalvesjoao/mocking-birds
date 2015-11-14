@@ -2,18 +2,18 @@
 'use strict';
 
 var commander = require('commander');
-var MockingBirds = require('../dist').default;
+var packageJson = require('../package.json');
+var MockingBirds = require('../src');
 
 function run(mocksDirectory, options) {
-  MockingBirds({
-    mocksDirectory,
-    serverPort: options.port,
-    whitelist: (options.whiteList || '').split(','),
-  });
+  var whitelist = (options.whiteList || '').split(',');
+  var serverPort = options.port;
+
+  MockingBirds(mocksDirectory, serverPort, whitelist);
 }
 
 commander
-  .version(require('../package.json').version)
+  .version(packageJson.version)
   .usage('<mocks directory> [options]')
   .option('-p, --port <n>', 'Server port')
   .option('-w, --white-list <url>,<url>,...', 'list of URLs accepted by CORS')
